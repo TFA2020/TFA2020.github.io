@@ -19,9 +19,33 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/clean-blog.css" rel="stylesheet">
+  <link href="css/clean-blog.min.css" rel="stylesheet">
 
 </head>
+
+<style>
+
+  @media only screen and (min-width: 768px){
+    .details{
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 577px) and (max-width: 767px){
+    .details{
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 576px){
+    .details{
+      font-size: 12px;
+      margin-left : 10px;
+      margin-right : 10px;
+    }
+  }
+
+</style>
 
 <body>
 
@@ -36,13 +60,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Homepage</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="statistics.html">Statistics</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -53,80 +80,124 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/language-banner.jpg')">
+  <header class="masthead" style="background-image: url('img/language-banner.jpg'); height:100vh">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>[replace content with JS]</h1>
-            <span class="subheading">[same goes here]</span>
+            <h1 class="ml6">
+              <span class="text-wrapper">
+                <span class="letters">Welcome!</span>
+              </span>
+            </h1>
+            <span class="subheading">"We speak your language"</span>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Articles [Background paper]-->
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12 mx-auto">
+        <h3>
+          Quality of Life Issue
+        </h3>
+        <p class="details">
+          Many NYC immigrants are not aware of their rights and benefits. This allows local healthcare facilities to take advantage of a patient and continue their workflow without getting a professional interpreter involved. Our data revealed that <strong>57%</strong> of immigrants might not be aware of their rights. This issue affects about <strong>3 in every 5 immigrants</strong>.
+        </p>
+      </div>
+      <div class="col-lg-6 col-12 mx-auto">
+        <h3>
+          Know What To Do
+        </h3>
+        <p class="details">
+          If a healthcare provider or their staff members reject an immigrant’s request for translation services, this should be reported to the <a href="https://www1.nyc.gov/site/cchr/enforcement/complaint-process.page">NYC Commission on Human Rights</a> or <a href="https://www.hhs.gov/civil-rights/filing-a-complaint/index.html">Office of Civil Rights (HHS)</a> as a complaint for violation of <strong>Title VI of the Civil Rights Act of 1964</strong>. Upon reporting of such discrimination, the department of Health will investigate the issue.
+        </p>
+      </div>
+      <div class="col-lg-6 col-12 mx-auto">
+        <h3>
+          Know Your Benefits
+        </h3>
+        <p class="details">
+          If you have Medicaid or Medicare or any form of health insurance funded by the federal government, you have the right to request for professional translation services free of charge when experiencing communication difficulties at a healthcare facility, provided that the facility accepts your health insurance.
+        </p>
+      </div>
+      <div class="col-lg-6 col-12 mx-auto">
+        <h3>
+          The Law Protects You
+        </h3>
+        <p class="details">
+          Title VI of the Civil Rights Act of 1964 "prohibits discrimination on the basis of race, color, and national origin in programs and activities receiving federal financial assistance". President John F. Kennedy once said, "Simple justice requires that public funds, to which all taxpayers of all races [colors, and national origins] contribute, not be spent in any fashion which encourages, entrenches, subsidizes or results in racial [color or national origin] discrimination". <br><span style="font-size:14px">Source : <a href="https://www.justice.gov/crt/fcs/TitleVI">https://www.justice.gov/crt/fcs/TitleVI</a></span>
+        </p>
+      </div>
+      <div class="col-12 mx-auto">
+        <h2>
+          How You Can Help
+        </h2>
+
+        <div class="row">
+          <div class="col-12 col-lg-6 mx-auto">
+            <p style="margin-bottom : 0" class="details">
+              You can support us by scrolling all the way down and find the <strong>"Support Us"</strong> button to our petition on change.org. For your convenience, you can also click this link <a href="http://chng.it/c95GffSgVL">here</a>
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 mx-auto">
+            <p class="details">
+              You can also read the NY times articles below that addresses the issue. You can help eliminate inequality and language barriers by sharing the information above. If you see any examples of miscommunication while you're at a medical facility, please step up if providers do not take responsibility and provide interpreters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Articles [Background paper] -->
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
-          <a href="post.html">
+          <a href="https://www.nytimes.com/2005/04/21/nyregion/language-barrier-called-health-hazard-in-er.html">
             <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
+              Language Barrier Called Health Hazard in E.R.
             </h2>
-            <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
+            <a href="https://www.nytimes.com/by/nina-bernstein">Nina Bernstein</a>
+            on The New York Times April 21, 2005</p>
         </div>
         <hr>
         <div class="post-preview">
-          <a href="post.html">
+          <a href="https://www.nytimes.com/2009/04/23/health/23chen.html">
             <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+              When the Patient Gets Lost in Translation
             </h2>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
+            <a href="https://well.blogs.nytimes.com/author/pauline-w-chen-md/">Pauline W. Chen, M.D.</a>
+            on The New York Times April 23, 2009</p>
         </div>
         <hr>
         <div class="post-preview">
-          <a href="post.html">
+          <a href="https://www.nytimes.com/2016/05/24/nyregion/a-brooklyn-ambulance-service-speaks-chinese-like-its-patients.html">
             <h2 class="post-title">
-              Science has not yet mastered prophecy
+              A Brooklyn Ambulance Service Speaks Chinese, Like Its Patients
             </h2>
             <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
+              Midwood Ambulance in Brooklyn, a private service, has two new vehicles staffed by Chinese-speaking health care workers to respond to New York City’s growing Asian-American population.
             </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
+            <a href="https://www.nytimes.com/by/sarah-maslin-nir">Sarah Maslin Nir</a>
+            on The New York Times May 23, 2016</p>
         </div>
         <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
-        </div>
         <hr>
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+          <a class="btn btn-primary float-right" href="http://chng.it/c95GffSgVL">Support Us &rarr;</a>
         </div>
       </div>
     </div>
@@ -165,7 +236,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+          <p class="copyright text-muted">Copyright &copy; Translation For All 2020</p>
         </div>
       </div>
     </div>

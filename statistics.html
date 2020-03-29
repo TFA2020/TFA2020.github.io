@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>About Us</title>
+  <title>Translation For All</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,9 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/clean-blog.css" rel="stylesheet">
+
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>-->
 
 </head>
 
@@ -56,27 +58,51 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/about-bg.jpg')">
+  <header class="masthead" style="">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>About Us</h1>
-            <span class="subheading">Learn who we are.</span>
+          <div class="site-heading">
+            <h1 class="ml6">
+              <span class="text-wrapper">
+                <span class="letters">Welcome !</span>
+              </span>
+            </h1>
+            <span class="subheading">"We speak your language"</span>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- Statistics and Research Analysis-->
+
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <p>We are two high school seniors attempting to reduce and eliminate inequality in Healthcare. Inequality can come from language barriers, which affect many LEP patients. We want compensation for patients who were not provided with translation services when demonstrating the need for such services (either requested or not) and to reinforce DOHMH’s policies on interpreter services.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+      <div class="col-lg-2 col-md-5 mx-auto">
+        <div class="stat-box">
+          <h4 class="description">Margin of error</h4>
+          <p class="timer count-number" data-decimals="2" data-to="6.6" data-refreshInterval="1000" data-speed="4000"></p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-5 mx-auto">
+        <div class="stat-box">
+          <h4 class="description">Survey Questions</h4>
+          <p class="timer count-number" data-to="14" data-refreshInterval="1000" data-speed="4000"></p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-5 mx-auto">
+        <div class="stat-box">
+          <h4 class="description">Respondents</h4>
+          <p class="timer count-number" data-to="220" data-refreshInterval="1000" data-speed="4000"></p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-5 mx-auto">
+        <div class="stat-box">
+          <h4 class="description">Population Represented</h4>
+          <p class="timer count-number" data-to="23000" data-refreshInterval="1000" data-speed="4000"></p>
+        </div>
       </div>
     </div>
   </div>
@@ -114,7 +140,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Website Name 2020</p>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
         </div>
       </div>
     </div>
@@ -125,8 +151,12 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
+  <script src="js/clean-blog.js"></script>
+  <script src="js/counter.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
 </html>
+
+

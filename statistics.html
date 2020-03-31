@@ -19,11 +19,31 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/clean-blog.css" rel="stylesheet">
-
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>-->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
 
 </head>
+
+<style>
+  img {
+    width : inherit;
+    height : auto;
+  }
+
+  .description,.count-number{
+    text-align: center;
+  }
+
+  #stat-display{
+    border-color : #D3D3D3;
+    border-radius : 5px;
+    border-width : thick;
+  }
+
+  .count-number{
+    margin : 10px 0px !important;
+  }
+
+</style>
 
 <body>
 
@@ -58,18 +78,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="">
+  <header class="masthead" style="background-image: url('img/language-banner.jpg');">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1 class="ml6">
-              <span class="text-wrapper">
-                <span class="letters">Welcome !</span>
-              </span>
-            </h1>
-            <span class="subheading">"We speak your language"</span>
+          <div class="post-heading">
+            <h1>Statistics</h1>
+            <h2 class="subheading">Key Findings From Our Research</h2>
           </div>
         </div>
       </div>
@@ -77,36 +93,61 @@
   </header>
 
   <!-- Statistics and Research Analysis-->
-
-  <div class="container">
+  <div class="container" id="stat-display">
     <div class="row">
-      <div class="col-lg-2 col-md-5 mx-auto">
+      <div class="col-lg-2 col-5 mx-auto">
         <div class="stat-box">
-          <h4 class="description">Margin of error</h4>
-          <p class="timer count-number" data-decimals="2" data-to="6.6" data-refreshInterval="1000" data-speed="4000"></p>
+          <h5 class="description">Margin of error</h5>
+          <p class="timer count-number" data-decimals="2" data-to="6.6" data-refreshInterval="3000" data-speed="4000"></p>
         </div>
       </div>
-      <div class="col-lg-2 col-md-5 mx-auto">
+      <div class="col-lg-2 col-5 mx-auto">
         <div class="stat-box">
-          <h4 class="description">Survey Questions</h4>
-          <p class="timer count-number" data-to="14" data-refreshInterval="1000" data-speed="4000"></p>
+          <h5 class="description">Percentage of LEP</h5>
+          <p class="timer count-number" data-to="38.64" data-refreshInterval="3000" data-speed="4000"></p>
         </div>
       </div>
-      <div class="col-lg-2 col-md-5 mx-auto">
+      <div class="col-lg-2 col-5 mx-auto">
         <div class="stat-box">
-          <h4 class="description">Respondents</h4>
-          <p class="timer count-number" data-to="220" data-refreshInterval="1000" data-speed="4000"></p>
+          <h5 class="description">Responses Collected</h5>
+          <p class="timer count-number" data-to="220" data-refreshInterval="3000" data-speed="4000"></p>
         </div>
       </div>
-      <div class="col-lg-2 col-md-5 mx-auto">
+      <div class="col-lg-2 col-5 mx-auto">
         <div class="stat-box">
-          <h4 class="description">Population Represented</h4>
-          <p class="timer count-number" data-to="23000" data-refreshInterval="1000" data-speed="4000"></p>
+          <h5 class="description">Population Represented</h5>
+          <p class="timer count-number" data-to="296328" data-refreshInterval="3000" data-speed="4000"></p>
         </div>
       </div>
     </div>
   </div>
 
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 mx-auto">
+        <img src="img/KnowledgeQuestion.png" style="border-color:black; border-style:double; margin-bottom:15px;">
+      </div>
+      <div class="col-12 col-sm-6 mx-auto">
+        When asked "New York City residents receive translation services...", <strong>57.3%</strong> of survey respondents indicated the wrong answer and are therefore not aware of their right to translation services. The answer choices were<br>
+        <li>As a right from the government <em>(correct answer)</em></li>
+        <li>At the discretion of the agency</li>
+        <li>None of the time</li>
+      </div>
+      <div class="col-12">
+        <br>
+      </div>
+      <div class="col-12 col-sm-6 mx-auto order-sm-1 order-12">
+        When asked "I have received adequate translation services, when needed, at my healthcare facility", <strong>54.5%</strong> of survey respondents disagreed or strongly disagreed with the claim. More than half of the survey respondents report receiving inadequate translation services.
+      </div>
+
+      <div class="col-12 col-sm-6 mx-auto order-sm-12 order-1">
+        <img src="img/AttitudeQuestion.png" style="border-color:black; border-style:double; margin-bottom:15px;">
+        <br>
+      </div>
+    </div>
+  </div>
+  <br>
   <hr>
 
   <!-- Footer -->
@@ -132,7 +173,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://github.com/TFA2020/TFA2020.github.io">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -140,7 +181,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+          <p class="copyright text-muted">Copyright &copy; Translation For All 2020</p>
         </div>
       </div>
     </div>
@@ -151,9 +192,31 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.js"></script>
+  <script src="js/clean-blog.min.js"></script>
   <script src="js/counter.js"></script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+  $(function() {
+
+    updateHeight();
+    $(window).resize(function() {
+        updateHeight();
+    });
+
+    function updateHeight(){
+      var maxHeight = 0;
+      $(".description").each(function(){
+        if ($(this).height() > maxHeight){
+          maxHeight = $(this).height();
+        }
+      });
+      $(".description").each(function(){
+        $(this).css("height", maxHeight);
+      });
+    }
+
+  });
+</script>
 
 </body>
 

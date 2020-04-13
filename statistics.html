@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Translation For All</title>
+  <title class="notranslate">Translation For All</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Translation For All</a>
+      <a class="navbar-brand notranslate" href="index.html">Translation For All</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -86,6 +86,7 @@
           <div class="post-heading">
             <h1>Statistics</h1>
             <h2 class="subheading">Key Findings From Our Research</h2>
+            <div id="google_translate_element"></div>
           </div>
         </div>
       </div>
@@ -129,7 +130,7 @@
         <img src="img/KnowledgeQuestion.png" style="border-color:black; border-style:double; margin-bottom:15px;">
       </div>
       <div class="col-12 col-sm-6 mx-auto">
-        When asked "New York City residents receive translation services...", <strong>57.3%</strong> of survey respondents indicated the wrong answer and are therefore not aware of their right to translation services. The answer choices were<br>
+        <p>When asked "New York City residents receive translation services...", <strong>57.3%</strong> of survey respondents indicated the wrong answer and are therefore not aware of their right to translation services. The answer choices were</p><br>
         <li>As a right from the government <em>(correct answer)</em></li>
         <li>At the discretion of the agency</li>
         <li>None of the time</li>
@@ -138,12 +139,18 @@
         <br>
       </div>
       <div class="col-12 col-sm-6 mx-auto order-sm-1 order-12">
-        When asked "I have received adequate translation services, when needed, at my healthcare facility", <strong>54.5%</strong> of survey respondents disagreed or strongly disagreed with the claim. More than half of the survey respondents report receiving inadequate translation services.
+        <p>When asked "I have received adequate translation services, when needed, at my healthcare facility", <strong>54.5%</strong> of survey respondents disagreed or strongly disagreed with the claim. More than half of the survey respondents report receiving inadequate translation services.</p>
       </div>
 
       <div class="col-12 col-sm-6 mx-auto order-sm-12 order-1">
         <img src="img/AttitudeQuestion.png" style="border-color:black; border-style:double; margin-bottom:15px;">
         <br>
+      </div>
+      <div class="col-12">
+        <p>To collect a more diverse portion of our target population, we have our entire survey read in three languages:</p>
+        <li><a href="./pdf/english_survey.pdf">English</a></li>
+        <li><a href="./pdf/spanish_survey.pdf">Español</a></li>
+        <li><a href="./pdf/chinese_survey.pdf">中文</a></li>
       </div>
     </div>
   </div>
@@ -181,7 +188,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Translation For All 2020</p>
+          <p class="copyright text-muted">Copyright &copy; <span class="notranslate">Translation For All</span> 2020</p>
         </div>
       </div>
     </div>
@@ -194,6 +201,16 @@
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
   <script src="js/counter.js"></script>
+
+  <!-- Google Translate Element begin -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en'
+        }, 'google_translate_element');
+      }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script>
   $(function() {
